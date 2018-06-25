@@ -7,39 +7,44 @@
 //
 
 import UIKit
+import Alamofire
 
-class DetailViewController: UIViewController {
+class DetailViewController: UITableViewController {
 
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
-
-
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 9
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskField", for: indexPath)
+        
+        if let task = self.task {
+            let path = Task.keyPaths[indexPath.row].path
+            if let object = task[keyPath: path] as? CustomStringConvertible {
+                cell.detailTextLabel?.text = object.description
+                cell.textLabel?.text = Task.keyPaths[indexPath.row].title
+            }
+        }
+        
+        return cell
+    }
+    
     func configureView() {
         // Update the user interface for the detail item.
-        if let detail = detailItem {
-            if let label = detailDescriptionLabel {
-                label.text = detail.description
-            }
+        if task != nil {
+            self.tableView.reloadData()
         }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         configureView()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    var detailItem: NSDate? {
+    var task: Task? {
         didSet {
-            // Update the view.
             configureView()
         }
     }
-
-
 }
 
