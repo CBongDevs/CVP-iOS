@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86387C7F20E3713C00BE2485 /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86387C7E20E3713C00BE2485 /* HeaderTableViewCell.swift */; };
+		86387CA720E385D500BE2485 /* DirectionalDisclosureIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86387CA620E385D500BE2485 /* DirectionalDisclosureIndicator.swift */; };
 		86723C7E20DF7F940057EE4B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86723C7D20DF7F940057EE4B /* Network.swift */; };
 		867A45B520DF5EE600367656 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867A45B420DF5EE600367656 /* AppDelegate.swift */; };
 		867A45B720DF5EE600367656 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867A45B620DF5EE600367656 /* MasterViewController.swift */; };
@@ -93,6 +95,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		86387C7E20E3713C00BE2485 /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		86387CA620E385D500BE2485 /* DirectionalDisclosureIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionalDisclosureIndicator.swift; sourceTree = "<group>"; };
 		86723C7D20DF7F940057EE4B /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		867A45B120DF5EE600367656 /* CVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		867A45B420DF5EE600367656 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -138,11 +142,13 @@
 		867A45B320DF5EE600367656 /* CVP */ = {
 			isa = PBXGroup;
 			children = (
+				86387C7E20E3713C00BE2485 /* HeaderTableViewCell.swift */,
 				867A45B420DF5EE600367656 /* AppDelegate.swift */,
 				867A45B620DF5EE600367656 /* MasterViewController.swift */,
 				86723C7D20DF7F940057EE4B /* Network.swift */,
 				86ADB5A820DF63A300A6B088 /* Data.swift */,
 				867A45B820DF5EE600367656 /* DetailViewController.swift */,
+				86387CA620E385D500BE2485 /* DirectionalDisclosureIndicator.swift */,
 				867A45BA20DF5EE600367656 /* Main.storyboard */,
 				867A45BD20DF5EE700367656 /* Assets.xcassets */,
 				867A45BF20DF5EE700367656 /* LaunchScreen.storyboard */,
@@ -297,9 +303,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				86723C7E20DF7F940057EE4B /* Network.swift in Sources */,
+				86387CA720E385D500BE2485 /* DirectionalDisclosureIndicator.swift in Sources */,
 				867A45B920DF5EE600367656 /* DetailViewController.swift in Sources */,
 				867A45B720DF5EE600367656 /* MasterViewController.swift in Sources */,
 				867A45B520DF5EE600367656 /* AppDelegate.swift in Sources */,
+				86387C7F20E3713C00BE2485 /* HeaderTableViewCell.swift in Sources */,
 				86ADB5A920DF63A300A6B088 /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

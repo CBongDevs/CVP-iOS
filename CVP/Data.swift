@@ -10,10 +10,18 @@ import Foundation
 
 struct Task: Codable {
     
-    enum Status: Int, Codable {
+    enum Status: Int, Codable, CustomStringConvertible {
         case open = 0
         case volunteered = 1
         case completed = 2
+        
+        var description: String {
+            switch self {
+            case .open: return "Open"
+            case .volunteered: return "Volunteered"
+            case .completed: return "Completed"
+            }
+        }
     }
     
     var title: String
@@ -36,20 +44,6 @@ struct Task: Codable {
         self.postedById = postedById
         self.contactPhone = contactPhone
         self.address = address
-    }
-    
-    static var keyPaths: [(title: String, path: PartialKeyPath<Task>)] {
-        get {
-            return [("title", \Task.title),
-                    ("id", \Task.id),
-                    ("categories", \Task.category),
-                    ("description", \Task.description),
-                    ("dataPosted", \Task.datePosted),
-                    ("completionStatus", \Task.completionStatus),
-                    ("postedByID", \Task.postedById),
-                    ("contactPhoneNumber", \Task.contactPhone),
-                    ("address", \Task.address)]
-        }
     }
 }
 
