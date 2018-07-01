@@ -26,6 +26,10 @@ extension UIView {
         if let view = viewWithTag(tag) {
             if let label = view as? UILabel {
                 label.text = text
+            } else if let field = view as? UITextField {
+                field.text = text
+            } else if let textView = view as? UITextView {
+                textView.text = text
             }
         }
     }
@@ -111,6 +115,17 @@ class DetailViewController: UITableViewController {
         } else {
             return tableView.rowHeight
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "editTask" {
+            let controller = (segue.destination as! UINavigationController).topViewController as! EditTaskViewController
+            controller.task = task
+        }
+    }
+    
+    @IBAction func unwindToDetailsController(sender: UIStoryboardSegue) {
+        
     }
     
     func configureView() {
