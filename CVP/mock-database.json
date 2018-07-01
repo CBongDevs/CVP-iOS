@@ -1,0 +1,48 @@
+{
+	"tasks": [
+		{
+		  "address" : "14 Beauty Point Road",
+		  "postedById" : -1,
+		  "id" : 1,
+		  "category" : "programming",
+		  "title" : "CVP",
+		  "contactPhone" : "0478707546",
+		  "description" : "Make a social volunteer platform",
+		  "completionStatus" : 1,
+		  "datePosted" : "21-6-2018"
+		},
+		{
+		  "address" : "14 Beauty Point Road",
+		  "postedById" : -1,
+		  "id" : 1,
+		  "category" : "music",
+		  "title" : "Improvisation",
+		  "contactPhone" : "0478707546",
+		  "description" : "Anyone want to improvise on the piano with me?",
+		  "completionStatus" : 1,
+		  "datePosted" : "21-6-2018"
+		},
+		{
+		  "address" : "14 Beauty Point Road",
+		  "postedById" : -1,
+		  "id" : 1,
+		  "category" : "math",
+		  "title" : "Integral Milking",
+		  "contactPhone" : "0478707546",
+		  "description" : "Whats the integral of one over x from minus i to the squart root of pi?",
+		  "completionStatus" : 1,
+		  "datePosted" : "21-6-2018"
+		},
+		{
+		  "address" : "14 Beauty Point Road",
+		  "postedById" : -1,
+		  "id" : 1,
+		  "category" : "Word Graphs",
+		  "title" : "CVP",
+		  "contactPhone" : "0478707546",
+		  "description" : "Making an api for convienient and powerful natural language processing.",
+		  "completionStatus" : 1,
+		  "datePosted" : "21-6-2018"
+		}
+	]
+}
